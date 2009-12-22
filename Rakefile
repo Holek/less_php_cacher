@@ -5,13 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "less_css_php"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Extension to LESS CSS for creating cache files your PHP projects can use}
+    gem.description = %Q{Extension to LESS CSS for creating cache files your PHP projects can use}
     gem.email = "aaron@gc4.co.uk"
     gem.homepage = "http://github.com/aaronrussell/less_css_php"
     gem.authors = ["Aaron Russell"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_dependency "less"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.files =  FileList["[A-Z]*", "{bin,lib,src}/**/*"]
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
