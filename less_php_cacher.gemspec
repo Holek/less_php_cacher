@@ -4,16 +4,16 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{less_css_php}
-  s.version = "0.0.0"
+  s.name = %q{less_php_cacher}
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Aaron Russell"]
   s.date = %q{2009-12-22}
-  s.default_executable = %q{lesscphp}
-  s.description = %q{Extension to LESS CSS for creating cached stylesheets your PHP projects can use.}
+  s.default_executable = %q{lessphpc}
+  s.description = %q{Extension to LESS for creating cached stylesheets your PHP projects can use}
   s.email = %q{aaron@gc4.co.uk}
-  s.executables = ["lesscphp"]
+  s.executables = ["lessphpc"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -23,15 +23,15 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "bin/lesscphp",
-     "lib/less_css_php.rb",
+     "bin/lessphpc",
+     "lib/less_php_cacher.rb",
      "src/less.php"
   ]
-  s.homepage = %q{http://github.com/aaronrussell/less_css_php}
+  s.homepage = %q{http://github.com/aaronrussell/less_php_cacher}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{Extension to LESS CSS for creating cached stylesheets your PHP projects can use.}
+  s.summary = %q{Extension to LESS for creating cached stylesheets your PHP projects can use}
   s.test_files = [
     "test/helper.rb",
      "test/test_less_css_php.rb"
