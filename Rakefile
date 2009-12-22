@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "less_css_php"
-    gem.summary = %Q{Extension to LESS CSS for creating cache files your PHP projects can use}
-    gem.description = %Q{Extension to LESS CSS for creating cache files your PHP projects can use}
+    gem.summary = %Q{Extension to LESS CSS for creating cached stylesheets your PHP projects can use.}
+    gem.description = %Q{Extension to LESS CSS for creating cached stylesheets your PHP projects can use.}
     gem.email = "aaron@gc4.co.uk"
     gem.homepage = "http://github.com/aaronrussell/less_css_php"
     gem.authors = ["Aaron Russell"]

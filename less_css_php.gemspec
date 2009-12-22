@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Aaron Russell"]
   s.date = %q{2009-12-22}
   s.default_executable = %q{lesscphp}
-  s.description = %q{Extension to LESS CSS for creating cache files your PHP projects can use}
+  s.description = %q{Extension to LESS CSS for creating cached stylesheets your PHP projects can use.}
   s.email = %q{aaron@gc4.co.uk}
   s.executables = ["lesscphp"]
   s.extra_rdoc_files = [
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{Extension to LESS CSS for creating cache files your PHP projects can use}
+  s.summary = %q{Extension to LESS CSS for creating cached stylesheets your PHP projects can use.}
   s.test_files = [
     "test/helper.rb",
      "test/test_less_css_php.rb"

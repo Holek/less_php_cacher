@@ -24,7 +24,7 @@ module Less
     
     def self.cache(source)
       @source = "#{source}.less"
-      @cache = "less-cache/#{source}.css"       
+      @cache = File.join('less-cache', "#{source}.css")
       css = Less::Engine.new(File.new(@source)).to_css
       FileUtils.mkpath(File.dirname(@cache))
       File.open(@cache, 'w') do |f|

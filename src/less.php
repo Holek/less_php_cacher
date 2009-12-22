@@ -1,7 +1,7 @@
 <?php
 /**
  * LESS CSS PHP cacher
- * Extension to LESS CSS for creating cache files your PHP projects can use
+ * Extension to LESS CSS for creating cached stylesheets your PHP projects can use
  * Copyright (c) 2009 Aaron Russell [http://www.aaronrussell.co.uk]
  * Licensed under the MIT license [http://www.opensource.org/licenses/mit-license.php]
  * Less is maintained by Alexis Sellier [http://github.com/cloudhead/less]
@@ -31,7 +31,7 @@ function less_php($less){
     echo fread($f, filesize($cache));
     fclose($f);
   else:
-    exec('ruby src/less-php.rb '.$less, $output);
+    exec('lesscphp '.$source, $output);
     foreach($output as $line):
       echo $line.NL;
     endforeach;
