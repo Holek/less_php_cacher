@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "less_css_php"
-    gem.summary = %Q{Extension to LESS CSS for creating cached stylesheets your PHP projects can use.}
-    gem.description = %Q{Extension to LESS CSS for creating cached stylesheets your PHP projects can use.}
+    gem.name = "less_php_cacher"
+    gem.summary = %Q{Extension to LESS for creating cached stylesheets your PHP projects can use}
+    gem.description = %Q{Extension to LESS for creating cached stylesheets your PHP projects can use}
     gem.email = "aaron@gc4.co.uk"
-    gem.homepage = "http://github.com/aaronrussell/less_css_php"
+    gem.homepage = "http://github.com/aaronrussell/less_php_cacher"
     gem.authors = ["Aaron Russell"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.add_dependency "less"

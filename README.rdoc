@@ -1,16 +1,43 @@
-= less_css_php
+= LESS PHP cacher
 
-Description goes here.
+Extension to LESS CSS for creating cached stylesheets your PHP projects can use.
 
-== Note on Patches/Pull Requests
+== Installation
+
+Simply run:
+
+  sudo gem install less_php_cacher -s http://gemcutter.org
+
+Requires LESS (http://lesscss.org/).
+
+== Preparation
+
+In your web project you need to create the LESS PHP wrapper script and cache directory. This is simply achieved by:
+
+  lessphpc prepare
+
+For help and other commands use:
+
+  lessphpc help
+
+== Integration
+
+Simply create your web project as usual and write your LESS files anywhere you like within your project. There are two ways to reference LESS files within your markup:
+
+  <link rel="stylesheet" href="less.php?style.less" type="text/css">
+
+..or..
+
+  <?php include 'less.php'; ?>
+  <style type="text/css">
+    <?php less_php('stylesheet.less'); ?>
+  </style>
+
+Every time you create a new or update an existing LESS file, the PHP wrapper script parses the LESS file and saves a cached version. If there are no changes then PHP serves up the cached version.
+
+== Author
  
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+* Aaron Russell - (http://www.aaronrussell.co.uk)
 
 == Copyright
 
