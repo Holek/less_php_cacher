@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Extension to LESS for creating cached stylesheets your PHP projects can use}
   s.test_files = [
     "test/helper.rb",
-     "test/test_less_css_php.rb"
+     "test/test_less_php_cacher.rb"
   ]
 
   if s.respond_to? :specification_version then
